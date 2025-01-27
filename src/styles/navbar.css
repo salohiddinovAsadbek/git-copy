@@ -95,23 +95,32 @@
 
 .copilot {
   width: calc(50 / 14.4 * 1vw);
-  padding: 0 calc(5 / 14.4 * 1vw);
   display: flex;
-  padding: calc();
   height: 100%;
   border: calc(1 / 14.4 * 1vw) solid #d0d9e0;
   border-radius: calc(7 / 14.4 * 1vw);
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .copilot > button {
+  width: 50% !important;
   background-color: inherit;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
+}
+
+.copilotButton {
+  border-right: calc(1 / 14.4 * 1vw) solid #d0d9e0 !important;
+  height: 100%;
+  border-top-left-radius: calc(7 / 14.4 * 1vw);
+  border-bottom-left-radius: calc(7 / 14.4 * 1vw);
+}
+
+.copilotButton:hover {
+  background-color: #eaedf0;
 }
 
 .copilot > p {
@@ -129,6 +138,20 @@
   height: calc(15 / 14.4 * 1vw);
 }
 
+.arrowDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+
+.arrowDown:hover {
+  background-color: #eaedf0;
+  border-top-right-radius: calc(7 / 14.4 * 1vw);
+  border-bottom-right-radius: calc(7 / 14.4 * 1vw);
+}
+
 .plus {
   display: flex;
   width: calc(55 / 14.4 * 1vw);
@@ -140,6 +163,31 @@
   align-items: center;
   padding: 0 calc(8 / 14.4 * 1vw);
   background-color: inherit;
+  position: relative;
+}
+
+.plus:hover {
+  background-color: #eaedf0;
+}
+
+.plus:hover .plusInfo {
+  display: flex;
+}
+
+.plusInfo {
+  display: none;
+  position: absolute;
+  padding: calc(5 / 14.4 * 1vw);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: calc(7 / 14.4 * 1vw);
+  bottom: calc(-30 / 14.4 * 1vw);
+  justify-content: center;
+  align-items: center;
+  gap: calc(5 / 14.4 * 1vw);
+  right: calc(-10 / 14.4 * 1vw);
+  z-index: 10;
 }
 
 .plus > i {
@@ -168,6 +216,31 @@
   border-radius: calc(7 / 14.4 * 1vw);
   padding: calc(5 / 14.4 * 1vw);
   background-color: inherit;
+  position: relative;
+}
+
+.issues:hover {
+  background-color: #eaedf0;
+}
+
+.issues:hover .issuesInfo {
+  display: flex !important;
+}
+
+.issuesInfo {
+  position: absolute;
+  display: none !important;
+  padding: calc(5 / 14.4 * 1vw);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: calc(7 / 14.4 * 1vw);
+  bottom: calc(-30 / 14.4 * 1vw);
+  justify-content: center;
+  align-items: center;
+  gap: calc(5 / 14.4 * 1vw);
+  right: calc(-10 / 14.4 * 1vw);
+  z-index: 10;
 }
 
 .issues > p {
@@ -193,6 +266,31 @@
   border: calc(1 / 14.4 * 1vw) solid #d0d9e0;
   border-radius: calc(7 / 14.4 * 1vw);
   background-color: inherit;
+  position: relative;
+}
+
+.pullRequests:hover {
+  background-color: #eaedf0;
+}
+
+.pullRequests:hover .pullRequestsInfo {
+  display: flex;
+}
+
+.pullRequestsInfo {
+  position: absolute;
+  display: none;
+  padding: calc(5 / 14.4 * 1vw);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: calc(7 / 14.4 * 1vw);
+  bottom: calc(-35 / 14.4 * 1vw);
+  justify-content: center;
+  align-items: center;
+  gap: calc(5 / 14.4 * 1vw);
+  right: calc(-20 / 14.4 * 1vw);
+  z-index: 10;
 }
 
 .pullRequests > i {
@@ -213,4 +311,37 @@
 
 .profile > i {
   font-size: calc(30 / 14.4 * 1vw);
+}
+
+.arrowDown {
+  position: relative;
+}
+
+.arrowDownInfo {
+  display: none;
+  position: absolute;
+  padding: calc(5 / 14.4 * 1vw);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: calc(7 / 14.4 * 1vw);
+  bottom: calc(-33 / 14.4 * 1vw);
+  justify-content: center;
+  align-items: center;
+  gap: calc(5 / 14.4 * 1vw);
+}
+
+.arrowDown:hover .arrowDownInfo {
+  display: flex;
+}
+
+.arrowDown:hover .arrowDownInfo {
+  display: flex;
+  z-index: 11;
+}
+
+.onHoverInfo > span {
+  font-family: var(--fontFamily);
+  font-size: calc(12 / 14.4 * 1vw);
+  line-height: calc(18 / 14.4 * 1vw);
 }

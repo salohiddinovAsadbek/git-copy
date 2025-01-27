@@ -1,13 +1,32 @@
 import "../styles/navbar.css";
 import Img from "./img";
 import "../styles/menu.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import "../styles/search.css";
 
 function Navbar() {
   const [isShow, setShow] = useState(false);
   const [menu, setMenu] = useState(false);
   const [search, setSearch] = useState(false);
+  const [inputValue, setValue] = useState("salohiddinovAsadbek");
+  const [isInputName, setInputName] = useState(true);
+  const [copilot, setCopilot] = useState(false);
+
+  useEffect(() => {
+    if (inputValue.length === 0) {
+      setInputName(false);
+      setCopilot(true);
+    }
+  }, [inputValue.length]); // search on input bolganda copilot ham
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/azamjonbro/repos")
+      .then((res) => res.json())
+      .then((repo) => {
+        console.log(repo);
+      });
+  }, [inputValue]);
 
   return (
     <div className="home">
@@ -43,26 +62,66 @@ function Navbar() {
           <button className="copilotButton">
             <i className="fa-brands fa-github-alt"></i>
           </button>
-          <p></p>
           <button className="arrowDown">
             <Img src="arrowDown" />
+            <p className="arrowDownInfo onHoverInfo">
+              <span>Open</span>
+              <span>Copilot...</span>
+            </p>
+            <div className="newConversation">
+              <p>New conversation</p>
+              <div className="immersive">
+                <Img src="immersive" />
+                <span>Immersive</span>
+              </div>
+              <p className="conversationLine"></p>
+              <div className="openWith">
+                <p>
+                  <i className="fa-brands fa-github-alt"></i>
+                  <span>Open with</span>
+                </p>
+                <Img src="arrowRight" />
+              </div>
+              <p>
+                <i className="fa-solid fa-gear"></i>
+                <span>Settings</span>
+              </p>
+            </div>
           </button>
         </div>
         <div className="lineNavbar"></div>
         <button className="plus">
           <i className="fa-solid fa-plus"></i>
           <Img src="arrowDown"></Img>
+          <p className="plusInfo inHoverInfo">
+            <span>Create</span>
+            <span>new...</span>
+          </p>
         </button>
         <button className="issues">
           <p>
             <i className="fa-solid fa-circle"></i>
           </p>
+          <div className="issuesInfo onHoverInfo">
+            <span>Issues</span>
+          </div>
         </button>
         <button className="pullRequests">
           <i className="fa-solid fa-code-pull-request"></i>
+          <p className="pullRequestsInfo onHoverInfo">
+            <span>Pull</span>
+            <span>requests</span>
+          </p>
         </button>
         <button className="pullRequests">
           <i className="fa-solid fa-inbox"></i>
+          <p className="pullRequestsInfo onHoverInfo">
+            <span>You</span>
+            <span>have</span>
+            <span>no</span>
+            <span>unread</span>
+            <span>notifications</span>
+          </p>
         </button>
         <button className="profile">
           <i className="fa-regular fa-circle-user"></i>
@@ -164,13 +223,45 @@ function Navbar() {
         <div
           className="searchMenu"
           style={{ display: search ? "flex" : "none" }}
+          onClick={(e) => {
+            e.stopPropagation();
+            // setShow(true);
+            // setSearch(true);
+          }}
         >
-          <div>
+          <div className="searchInput">
             <i className="fa-solid fa-magnifying-glass"></i>
-            <input type="text" />
-            <button>
-              <Img src="closeIcon" />
+            <label htmlFor="">
+              <span style={{ display: isInputName ? "flex" : "none" }}>
+                {inputValue}
+              </span>
+              <input
+                type="text"
+                className="inputType"
+                value={inputValue}
+                onChange={(e) => {
+                  setValue(e.target.value);
+                }}
+              />
+            </label>
+            <button
+              onClick={() => {
+                setShow(false);
+                setSearch(false);
+              }}
+            >
+              <Img src="closeIconWhite" />
             </button>
+          </div>
+          <div className="copilotSearch">
+            <p>Copilot</p>
+            <div style={{ display: copilot ? "flex" : "none" }}>
+              <p>
+                <i className="fa-brands fa-github-alt"></i>
+                <span>Ask Copilot</span>
+              </p>
+              <NavLink>Start a new Copilot thread</NavLink>
+            </div>
           </div>
         </div>
       </div>
