@@ -3,7 +3,7 @@
   padding: 0 calc(15 / 14.4 * 1vw);
   background-color: #f5f8fa;
   padding-top: calc(6 / 14.4 * 1vw);
-  gap: calc(5 / 14.4 * 1vw);
+  gap: calc(10 / 14.4 * 1vw);
 }
 
 .routing a {
@@ -53,4 +53,12 @@
   background-color: #e7ebee;
   border-radius: 60%;
   padding: calc(2 / 14.4 * 1vw) calc(6 / 14.4 * 1vw);
+}
+
+.alreadyNavigate {
+  border-bottom: calc(2 / 14.4 * 1vw) solid #fd8c73 !important;
+}
+
+.alreadyNavigate p {
+  font-weight: 700 !important;
 }

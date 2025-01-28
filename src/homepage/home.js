@@ -1,7 +1,14 @@
 import Navbar from "../components/navbar";
+import Profile from "../components/profile";
+import "../styles/style.css";
 
 function Home() {
-  return <Navbar />;
+  return (
+    <div className="homePage">
+      <Navbar />
+      <Profile />
+    </div>
+  );
 }
 
 export default Home;

@@ -1,10 +1,11 @@
 import "../styles/routing.css";
 import Img from "../components/img";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 function Routing() {
   const [repoLength, setRepo] = useState(0);
   const [projectsLength, setProjects] = useState(0);
+  const where = useLocation();
   useEffect(() => {
     fetch("https://api.github.com/users/salohiddinovAsadbek/repos")
       .then((res) => res.json())
@@ -25,6 +26,7 @@ function Routing() {
       img: <Img src="overview" />,
       title: "Overview",
       count: 0,
+      isOpen: where.pathname === "/",
     },
     {
       path: "/",
@@ -56,7 +58,10 @@ function Routing() {
     <div className="routing">
       {routesys.map((item, index) => {
         return (
-          <div key={index}>
+          <div
+            key={index}
+            className={`${item?.isOpen ? "alreadyNavigate" : ""}`}
+          >
             <NavLink to={item.path}>
               {item.img}
               <p>{item.title}</p>

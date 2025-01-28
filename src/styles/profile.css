@@ -1,0 +1,194 @@
+.profileMain {
+  display: flex;
+  flex-direction: column;
+  padding-left: calc(150 / 14.4 * 1vw);
+  padding-top: calc(35 / 14.4 * 1vw);
+  /* background-color: blue; */
+  width: min-content;
+}
+
+.imgProfile {
+  display: flex;
+  position: relative;
+  width: min-content;
+}
+
+.imgProfile > img {
+  width: calc(300 / 14.4 * 1vw);
+  height: calc(300 / 14.4 * 1vw);
+  border-radius: 50%;
+  border: calc(2 / 14.4 * 1vw) solid #d6dee3;
+}
+
+.imgProfile > button {
+  position: absolute;
+  bottom: calc(35 / 14.4 * 1vw);
+  left: calc(250 / 14.4 * 1vw);
+  border-radius: 50%;
+  padding: calc(10 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #d4dce3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  gap: calc(10 / 14.4 * 1vw);
+  width: calc(38 / 14.4 * 1vw);
+}
+
+.imgProfile > button > i {
+  font-size: calc(14 / 14.4 * 1vw);
+  color: #78808a;
+}
+
+.imgProfile > button > i:hover .setStatusp {
+  color: blue !important;
+}
+
+.setStatusp {
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  color: #78808a;
+  font-family: var(--fontFamily);
+  display: none;
+}
+
+.imgProfile > button:hover {
+  border-radius: calc(18 / 14.4 * 1vw);
+  padding: calc(6 / 14.4 * 1vw) calc(5 / 14.4 * 1vw) !important;
+  width: calc(120 / 14.4 * 1vw);
+}
+
+.imgProfile > button:hover .setStatusp {
+  display: flex;
+}
+
+.nameProfile {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(20 / 14.4 * 1vw);
+}
+
+.nameProfile > h1 {
+  font-size: calc(30 / 14.4 * 1vw);
+  line-height: calc(30 / 14.4 * 1vw);
+}
+
+.nameProfile > p {
+  display: flex;
+  gap: calc(10 / 14.4 * 1vw);
+  align-items: center;
+}
+
+.nameProfile > p > span {
+  font-size: calc(20 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+  color: #59636e;
+}
+
+.bio {
+  font-size: calc(16 / 14.4 * 1vw);
+  line-height: calc(22 / 14.4 * 1vw);
+  color: rgb(31, 35, 40);
+  font-family: var(--fontFamily);
+  margin-top: calc(15 / 14.4 * 1vw);
+  margin-bottom: calc(15 / 14.4 * 1vw);
+}
+
+.editProfile {
+  width: calc(100%);
+  height: calc(30 / 14.4 * 1vw);
+  background-color: #f5f8fa;
+  border-radius: calc(10 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #d2dae1;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(14 / 14.4 * 1vw);
+}
+
+.editProfile:hover {
+  background-color: #eaedf0;
+}
+
+.followingSection {
+  display: flex;
+  gap: calc(5 / 14.4 * 1vw);
+  align-items: center;
+  margin-top: calc(15 / 14.4 * 1vw);
+}
+
+.followingSection > p {
+  display: flex;
+  align-items: center;
+  gap: calc(5 / 14.4 * 1vw);
+}
+
+.followingSection > p > span {
+  font-size: calc(15 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  color: #363a3e;
+  font-weight: 800;
+}
+
+.followS {
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(19 / 14.4 * 1vw);
+  color: #5d6671 !important;
+  font-weight: normal !important;
+}
+
+.followingSection i {
+  font-size: calc(12 / 14.4 * 1vw);
+  color: #5d6671;
+}
+
+.followingSection > span {
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(19 / 14.4 * 1vw);
+  color: #5d6671;
+}
+
+.followingBlue:hover .followS {
+  color: blue !important;
+}
+
+.followingBlue:hover .followN {
+  color: blue !important;
+}
+
+.followingBlue:hover .fa-user-group {
+  color: blue !important;
+}
+
+.userEditInfo {
+  display: flex;
+  flex-direction: column;
+  gap: calc(10 / 14.4 * 1vw);
+  margin-top: calc(20 / 14.4 * 1vw);
+}
+
+.userEditInfo > div {
+  display: flex;
+  align-items: center;
+  gap: calc(10 / 14.4 * 1vw);
+}
+
+.userEditInfo > div > i {
+  color: #59636e;
+  font-size: calc(15 / 14.4 * 1vw);
+  width: calc(18 / 14.4 * 1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userEditInfo > div svg {
+  width: calc(18 / 14.4 * 1vw);
+  height: calc(18 / 14.4 * 1vw);
+}
+
+.userEditInfo > div > p {
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  color: rgb(31, 35, 40);
+  font-family: var(--fontFamily);
+}
