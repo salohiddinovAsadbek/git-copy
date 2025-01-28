@@ -1,0 +1,56 @@
+.routing {
+  display: flex;
+  padding: 0 calc(15 / 14.4 * 1vw);
+  background-color: #f5f8fa;
+  padding-top: calc(6 / 14.4 * 1vw);
+  gap: calc(5 / 14.4 * 1vw);
+}
+
+.routing a {
+  padding: calc(5 / 14.4 * 1vw);
+  border-radius: calc(7 / 14.4 * 1vw);
+  display: flex;
+  align-items: center;
+  gap: calc(10 / 14.4 * 1vw);
+}
+
+.routing a:hover {
+  background-color: #eaedf0;
+}
+
+.routing svg {
+  width: calc(18 / 14.4 * 1vw);
+  height: calc(18 / 14.4 * 1vw);
+}
+
+.routing > div {
+  padding-bottom: calc(8 / 14.4 * 1vw);
+  border-bottom: calc(2 / 14.4 * 1vw) solid #f5f8fa;
+}
+
+.routing > div:hover {
+  border-bottom: calc(2 / 14.4 * 1vw) solid #fd8c73;
+}
+
+.routing i {
+  font-size: calc(14 / 14.4 * 1vw);
+  color: #59636e;
+}
+
+.routing > div > a > p:nth-child(2) {
+  font-size: calc(14 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+  color: rgb(31, 35, 40);
+  line-height: calc(20 / 14.4 * 1vw);
+  font-weight: 400;
+}
+
+.routing > div > a > p:nth-child(3) {
+  font-size: calc(12 / 14.4 * 1vw);
+  line-height: calc(18 / 14.4 * 1vw);
+  color: #1f2328;
+  font-family: var(--fontFamily);
+  background-color: #e7ebee;
+  border-radius: 60%;
+  padding: calc(2 / 14.4 * 1vw) calc(6 / 14.4 * 1vw);
+}

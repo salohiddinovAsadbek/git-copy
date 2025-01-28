@@ -345,3 +345,58 @@
   font-size: calc(12 / 14.4 * 1vw);
   line-height: calc(18 / 14.4 * 1vw);
 }
+
+.plusInfoFocus {
+  display: none;
+  flex-direction: column;
+  border-radius: calc(15 / 14.4 * 1vw);
+  background-color: white;
+  border: calc(1 / 14.4 * 1vw) solid #9b9c9d;
+  position: absolute;
+  width: calc(180 / 14.4 * 1vw);
+  bottom: calc(-250 / 14.4 * 1vw);
+  padding: calc(10 / 14.4 * 1vw) 0;
+  left: 0;
+  transition: all 0.2s linear;
+}
+
+.plus:focus .plusInfoFocus {
+  display: flex;
+}
+
+.plus:focus .plusInfo {
+  display: none;
+}
+
+.plusInfoFocus > div {
+  display: flex;
+  gap: calc(10 / 14.4 * 1vw);
+  align-items: center;
+  padding: calc(5 / 14.4 * 1vw);
+  margin: 0 calc(10 / 14.4 * 1vw);
+  border-radius: calc(7 / 14.4 * 1vw);
+}
+
+.plusInfoFocus > div svg {
+  width: calc(15 / 14.4 * 1vw);
+  height: calc(15 / 14.4 * 1vw);
+}
+
+.plusInfoFocus > div > p {
+  font-family: var(--fontFamily);
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+}
+
+.linePlusInfoFocus {
+  width: 100%;
+  padding: 0 !important;
+  height: calc(1 / 14.4 * 1vw);
+  background-color: #dfe4e9;
+  margin: calc(10 / 14.4 * 1vw) 0 !important;
+}
+
+.plusInfoFocus > div > i {
+  font-size: calc(14 / 14.4 * 1vw);
+  color: #59636e;
+}
