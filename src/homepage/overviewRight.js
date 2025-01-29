@@ -17,7 +17,7 @@ function OverviewRight() {
       .catch((error) => {
         console.log(error);
       });
-  }, [repoData]);
+  }, [dispatch]);
 
   return (
     <div className="overViewRight">
