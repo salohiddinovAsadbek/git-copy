@@ -29,10 +29,11 @@ function Routing() {
       isOpen: where.pathname === "/",
     },
     {
-      path: "/",
+      path: "/repositories",
       img: <i className="fa-solid fa-book"></i>,
       title: "Repositories",
       count: repoLength,
+      isOpen: where.pathname === "/repositories",
     },
     {
       path: "/",
