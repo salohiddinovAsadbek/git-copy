@@ -9,14 +9,22 @@ function OverviewRight() {
   const dispatch = useDispatch();
   const repoData = useSelector((state) => state.repoData);
   useEffect(() => {
-    fetch("https://api.github.com/users/salohiddinovAsadbek/repos")
-      .then((res) => res.json())
-      .then((data) => {
+    const fetchRepos = async () => {
+      try {
+        const response = await fetch(
+          "https://api.github.com/users/salohiddinovAsadbek/repos"
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch");
+        }
+        const data = await response.json();
         dispatch(sendRepo(data));
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      } catch (error) {
+        console.error("Error fetching repositories:", error);
+      }
+    };
+
+    fetchRepos();
   }, [dispatch]);
 
   return (
