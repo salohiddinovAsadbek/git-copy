@@ -36,10 +36,11 @@ function Routing() {
       isOpen: where.pathname === "/repositories",
     },
     {
-      path: "/",
+      path: "/projects",
       img: <Img src="projects" />,
       title: "Projects",
       count: projectsLength,
+      isOpen: where.pathname === "/projects",
     },
     {
       path: "/",

@@ -1,28 +1,9 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { send } from "../store/slices/userInfo";
+import { useSelector } from "react-redux";
 import "../styles/profile.css";
 import Img from "./img";
 
 function Profile() {
-  const dispatch = useDispatch();
-  const [userInfos, setUserInfo] = useState([]);
   const userget = useSelector((state) => state.userinfo);
-
-  useEffect(() => {
-    fetch("https://api.github.com/users/salohiddinovAsadbek")
-      .then((res) => res.json())
-      .then((data) => {
-        setUserInfo(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
-  useEffect(() => {
-    dispatch(send(userInfos));
-  }, [userInfos]);
 
   setTimeout(() => {
     console.log(userget);

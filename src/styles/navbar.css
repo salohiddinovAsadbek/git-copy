@@ -309,8 +309,11 @@
   border: none;
 }
 
-.profile > i {
-  font-size: calc(30 / 14.4 * 1vw);
+.profile > img {
+  width: calc(35 / 14.4 * 1vw);
+  height: calc(35 / 14.4 * 1vw);
+  border-radius: 50%;
+  border: calc(1 / 14.4 * 1vw) solid #dedfe1;
 }
 
 .arrowDown {

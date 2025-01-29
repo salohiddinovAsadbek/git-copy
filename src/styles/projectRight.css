@@ -1,0 +1,53 @@
+.projectRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-top: calc(30 / 14.4 * 1vw);
+  width: 100%;
+  margin-right: calc(150 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #d1d9e0;
+  border-radius: calc(8 / 14.4 * 1vw);
+  height: min-content;
+  padding: calc(50 / 14.4 * 1vw) 0;
+}
+
+.projectPageWrapper {
+  display: flex;
+  gap: calc(25 / 14.4 * 1vw);
+}
+
+.projectRight svg {
+  width: calc(25 / 14.4 * 1vw);
+  height: calc(25 / 14.4 * 1vw);
+}
+
+.projectRight > h1 {
+  font-size: calc(20 / 14.4 * 1vw);
+  line-height: calc(30 / 14.4 * 1vw);
+  color: rgb(31, 35, 40);
+  font-weight: 600;
+  margin-top: calc(10 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+  margin-bottom: calc(2 / 14.4 * 1vw);
+}
+
+.projectRight > p {
+  font-size: calc(16 / 14.4 * 1vw);
+  line-height: calc(22 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+  color: rgb(89, 99, 110);
+}
+
+.projectRight > button {
+  padding: calc(5 / 14.4 * 1vw) calc(12 / 14.4 * 1vw);
+  background-color: #1e883d;
+  color: white;
+  border: none;
+  border-radius: calc(7 / 14.4 * 1vw);
+  font-size: calc(15 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+  margin-top: calc(25 / 14.4 * 1vw);
+}

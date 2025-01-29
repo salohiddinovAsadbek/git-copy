@@ -100,6 +100,13 @@ function Img({ src }) {
 <path d="M9 14V10" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `,
+    repoMainWhite: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8.98987V20.3499C16 21.7999 14.96 22.4099 13.69 21.7099L9.76001 19.5199C9.34001 19.2899 8.65999 19.2899 8.23999 19.5199L4.31 21.7099C3.04 22.4099 2 21.7999 2 20.3499V8.98987C2 7.27987 3.39999 5.87988 5.10999 5.87988H12.89C14.6 5.87988 16 7.27987 16 8.98987Z" stroke="#d5e7d9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" stroke="#d5e7d9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 12H11" stroke="#d5e7d9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14V10" stroke="#d5e7d9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
     dots: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 3.19995V3.20995" stroke="#6e7781" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12 7.69995V7.70995" stroke="#6e7781" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -130,6 +137,14 @@ function Img({ src }) {
     arrowDownRepo: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#4d5155" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+`,
+    connection: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.2803 10.4498L21.0002 6.72974L17.2803 3.00977" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 6.72949H21" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.71997 13.5498L3 17.2698L6.71997 20.9898" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 17.2695H3" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
 `,
   };
   return (

@@ -1,31 +1,11 @@
 import { NavLink } from "react-router-dom";
 import "../styles/overview.css";
-import { useEffect } from "react";
 import Img from "../components/img";
-import { useDispatch, useSelector } from "react-redux";
-import { sendRepo } from "../store/slices/repos";
+import { useSelector } from "react-redux";
 
 function OverviewRight() {
-  const dispatch = useDispatch();
   const repoData = useSelector((state) => state.repoData);
-  useEffect(() => {
-    const fetchRepos = async () => {
-      try {
-        const response = await fetch(
-          "https://api.github.com/users/salohiddinovAsadbek/repos"
-        );
-        if (!response.ok) {
-          throw new Error("Failed to fetch");
-        }
-        const data = await response.json();
-        dispatch(sendRepo(data));
-      } catch (error) {
-        console.error("Error fetching repositories:", error);
-      }
-    };
-
-    fetchRepos();
-  }, [dispatch]);
+  const repoDataClone = [...repoData].slice(0, 5);
 
   return (
     <div className="overViewRight">
@@ -34,7 +14,7 @@ function OverviewRight() {
         <NavLink to="/">Customize your pins</NavLink>
       </div>
       <div className="overRightWrapper">
-        {repoData.map((item) => {
+        {repoDataClone.map((item) => {
           return (
             <div className="overRightCard" key={item.id}>
               <div className="overRightCardInfo">

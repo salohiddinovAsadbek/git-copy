@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/search.css";
 import Routing from "../routingSystem/routing";
+import { useSelector } from "react-redux";
+import "../styles/viewAccount.css";
 
 function Navbar() {
   const [isShow, setShow] = useState(false);
@@ -13,6 +15,8 @@ function Navbar() {
   const [inputValue, setValue] = useState("salohiddinovAsadbek");
   const [isInputName, setInputName] = useState(true);
   const [copilot, setCopilot] = useState(false);
+  const [account, setAccount] = useState(false);
+  const userThumbnail = useSelector((state) => state.userinfo);
 
   useEffect(() => {
     if (inputValue.length === 0) {
@@ -145,8 +149,14 @@ function Navbar() {
               <span>notifications</span>
             </p>
           </button>
-          <button className="profile">
-            <i className="fa-regular fa-circle-user"></i>
+          <button
+            className="profile"
+            onClick={() => {
+              setAccount(true);
+              setShow(true);
+            }}
+          >
+            <img src={userThumbnail.avatar_url} alt="userAvatat" />
           </button>
         </div>
         <div
@@ -283,6 +293,37 @@ function Navbar() {
                   <span>Ask Copilot</span>
                 </p>
                 <NavLink>Start a new Copilot thread</NavLink>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ display: account ? "flex" : "none" }}
+            className="viewAccount"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          >
+            <div className="viewAccountTop">
+              <div>
+                <img src={userThumbnail.avatar_url} alt="avatar" />
+                <p>
+                  <span>{userThumbnail.login}</span>
+                  <span>{userThumbnail.name}</span>
+                </p>
+              </div>
+              <div>
+                <button>
+                  <Img src="connection" />
+                  <p className="connectionDes">Account switcher</p>
+                </button>
+                <button
+                  onClick={() => {
+                    setShow(false);
+                    setAccount(false);
+                  }}
+                >
+                  <i className="fa-solid fa-x"></i>
+                </button>
               </div>
             </div>
           </div>

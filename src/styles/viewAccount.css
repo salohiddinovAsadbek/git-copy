@@ -1,0 +1,96 @@
+.viewAccount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23vw;
+  background-color: white;
+  height: 100vh;
+  border-top-left-radius: calc(15 / 14.4 * 1vw);
+  border-bottom-left-radius: calc(15 / 14.4 * 1vw);
+  flex-direction: column;
+  padding: calc(15 / 14.4 * 1vw);
+}
+
+.viewAccountTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewAccountTop > div {
+  display: flex;
+  gap: calc(10 / 14.4 * 1vw);
+  align-items: center;
+}
+
+.viewAccountTop > div > img {
+  width: calc(35 / 14.4 * 1vw);
+  height: calc(35 / 14.4 * 1vw);
+  border-radius: 50%;
+}
+
+.viewAccountTop > div > p {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewAccountTop > div > p > span:first-child {
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(19 / 14.4 * 1vw);
+  color: rgb(31, 35, 40);
+  font-weight: 600;
+  font-family: var(--fontFamily);
+}
+
+.viewAccountTop > div > p > span:last-child {
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(18 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+  color: rgb(89, 99, 110);
+}
+
+.viewAccountTop > div > button > i {
+  color: #59636e;
+  font-size: calc(14 / 14.4 * 1vw);
+}
+
+.viewAccountTop > div > button {
+  padding: calc(8 / 14.4 * 1vw);
+  border-radius: calc(6 / 14.4 * 1vw);
+  border: none;
+  background-color: inherit;
+  position: relative;
+}
+
+.connectionDes {
+  position: absolute;
+  bottom: 0;
+  padding: calc(3 / 14.4 * 1vw) calc(6 / 14.4 * 1vw);
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: calc(7 / 14.4 * 1vw);
+  width: max-content;
+  font-size: calc(12 / 14.4 * 1vw);
+  line-height: calc(18 / 14.4 * 1vw);
+  bottom: calc(-25 / 14.4 * 1vw);
+  right: calc(-30 / 14.4 * 1vw);
+  display: none;
+}
+
+.viewAccountTop > div > button {
+  cursor: pointer;
+}
+
+.viewAccountTop > div svg {
+  width: calc(16 / 14.4 * 1vw);
+  height: calc(16 / 14.4 * 1vw);
+}
+
+.viewAccountTop > div > button:hover {
+  background-color: #eaedf0;
+}
+
+.viewAccountTop > div > button:hover .connectionDes {
+  display: flex;
+}
