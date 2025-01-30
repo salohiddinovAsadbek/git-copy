@@ -3,6 +3,7 @@ import "../styles/following.css";
 import Profile from "../components/profile";
 import { useSelector } from "react-redux";
 import FollowingType from "./follwingType";
+import Footer from "../components/footer";
 
 function Follow() {
   const following = useSelector((state) => state.following);
@@ -18,6 +19,7 @@ function Follow() {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

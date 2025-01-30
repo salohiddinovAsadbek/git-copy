@@ -13,6 +13,7 @@ function RepoWrapper() {
         <div className="typeRepo">
           <p>Type</p>
           <Img src="arrowDownRepo" />
+          <div></div>
         </div>
         <div className="typeRepo">
           <p>Language</p>

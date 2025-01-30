@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Profile from "../components/profile";
 import "../styles/style.css";
@@ -11,6 +12,7 @@ function Home() {
         <Profile />
         <OverviewRight />
       </div>
+      <Footer />
     </div>
   );
 }
