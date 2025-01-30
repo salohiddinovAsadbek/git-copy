@@ -8,6 +8,8 @@ import { useDispatch } from "react-redux";
 import { sendRepo } from "./store/slices/repos";
 import ProjectPage from "./projectPage/projectPage";
 import { send } from "./store/slices/userInfo";
+import Following from "./followingPage/follow";
+import { sendFollowing } from "./store/slices/following";
 
 function App() {
   const dispatch = useDispatch();
@@ -20,9 +22,6 @@ function App() {
       .catch((error) => {
         console.log(error);
       });
-  }, [dispatch]); // repositorilarni olish
-
-  useEffect(() => {
     fetch("https://api.github.com/users/salohiddinovAsadbek")
       .then((res) => res.json())
       .then((data) => {
@@ -31,13 +30,23 @@ function App() {
       .catch((error) => {
         console.log(error);
       });
-  }, [dispatch]);
+    fetch(`https://api.github.com/users/salohiddinovAsadbek/following`)
+      .then((res) => res.json())
+      .then((data) => {
+        dispatch(sendFollowing(data));
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, [dispatch]); // repositorilarni olish
 
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/repositories" element={<RepoMain />} />
       <Route path="/projects" element={<ProjectPage />} />
+      <Route path="/following" element={<Following />} />
     </Routes>
   );
 }

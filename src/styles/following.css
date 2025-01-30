@@ -1,0 +1,108 @@
+.following {
+  display: flex;
+  gap: calc(20 / 14.4 * 1vw);
+  padding-right: calc(150 / 14.4 * 1vw);
+}
+
+.followingWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
+}
+
+.followingCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: min-content;
+  padding: calc(30 / 14.4 * 1vw) 0;
+  border-bottom: calc(1 / 14.4 * 1vw) solid #dfe4e9;
+}
+
+.followingCard > button {
+  padding: calc(4 / 14.4 * 1vw) calc(13 / 14.4 * 1vw);
+  background-color: #f5f8fa;
+  border: calc(1 / 14.4 * 1vw) solid #e3e9ed;
+  border-radius: calc(7 / 14.4 * 1vw);
+  height: min-content;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(19 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+}
+
+.followingCard > button:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.followingCard > div {
+  display: flex;
+  gap: calc(20 / 14.4 * 1vw);
+}
+
+.followingCard > div > img {
+  width: calc(60 / 14.4 * 1vw);
+  height: calc(60 / 14.4 * 1vw);
+  border-radius: 50%;
+}
+
+.followingInfo > p:first-child {
+  display: flex;
+  gap: calc(10 / 14.4 * 1vw);
+  align-items: center;
+  margin-bottom: calc(2 / 14.4 * 1vw);
+}
+
+.followingInfo > p:first-child > span:first-child {
+  font-size: calc(17 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  color: black;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+}
+
+.followingInfo > p:first-child > span:last-child {
+  font-size: calc(15 / 14.4 * 1vw);
+  line-height: calc(21 / 14.4 * 1vw);
+  font-weight: 400;
+  color: #717a84;
+}
+
+.bioFollowing {
+  font-size: calc(13 / 14.4 * 1vw);
+  line-height: calc(18 / 14.4 * 1vw);
+  color: rgb(89, 99, 110);
+  font-family: var(--fontFamily);
+  font-weight: 400;
+  margin-bottom: calc(8 / 14.4 * 1vw);
+}
+
+.extraInfoFollowing {
+  display: flex;
+  align-items: center;
+  gap: calc(20 / 14.4 * 1vw);
+}
+
+.extraInfoFollowing > div {
+  display: flex;
+  align-items: center;
+  gap: calc(5 / 14.4 * 1vw);
+}
+
+.extraInfoFollowing > div svg {
+  width: calc(17 / 14.4 * 1vw);
+  height: calc(17 / 14.4 * 1vw);
+}
+
+.extraInfoFollowing > div > span {
+  font-size: calc(12 / 14.4 * 1vw);
+  line-height: calc(18 / 14.4 * 1vw);
+  color: rgb(89, 99, 110);
+  font-family: var(--fontFamily);
+  font-weight: 400;
+}
+
+.extraInfoFollowing > div > i {
+  font-size: calc(14 / 14.4 * 1vw);
+  color: rgb(89, 99, 110);
+}

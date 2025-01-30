@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import "../styles/profile.css";
 import Img from "./img";
+import { useNavigate } from "react-router-dom";
 
 function Profile() {
   const userget = useSelector((state) => state.userinfo);
@@ -8,6 +9,8 @@ function Profile() {
   setTimeout(() => {
     console.log(userget);
   }, 5000);
+
+  const navigate = useNavigate();
 
   return (
     <div className="profileMain">
@@ -35,7 +38,12 @@ function Profile() {
           <span className="followS">followers</span>
         </p>
         <span>•</span>
-        <p className="followingBlue">
+        <p
+          className="followingBlue"
+          onClick={() => {
+            navigate("/following");
+          }}
+        >
           <span className="followN">{userget.following}</span>
           <span className="followS">following</span>
         </p>
