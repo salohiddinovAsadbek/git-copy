@@ -180,6 +180,17 @@ function Img({ src }) {
 <path d="M18.3398 20C19.0598 19.85 19.7398 19.56 20.2998 19.13C21.8598 17.96 21.8598 16.03 20.2998 14.86C19.7498 14.44 19.0798 14.16 18.3698 14" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `,
+    packages: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.4996 2.30005C13.4996 2.30005 12.5996 3.10005 12.5996 4.20005V8.80005C12.5996 9.80005 13.3996 10.7 14.4996 10.7C15.4996 10.7 16.3996 9.90005 16.3996 8.80005V4.10005C16.3996 3.10005 15.5996 2.30005 14.4996 2.30005Z" stroke="#2188ff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.5996 10.5999H20.1996C21.0996 10.5999 21.7996 9.8999 21.7996 8.9999C21.7996 8.0999 21.0996 7.3999 20.1996 7.3999C19.2996 7.3999 18.5996 8.0999 18.5996 8.9999V10.5999Z" stroke="#2188ff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 9.20005C2 10.2 2.8 11.1 3.9 11.1H8.5C9.5 11.1 10.4 10.3 10.4 9.20005C10.4 8.20005 9.6 7.30005 8.5 7.30005H3.9C2.8 7.40005 2 8.20005 2 9.20005Z" stroke="#2188ff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.4002 5.1V3.6C10.4002 2.7 9.7002 2 8.8002 2C7.9002 2 7.2002 2.7 7.2002 3.6C7.2002 4.5 7.9002 5.2 8.8002 5.2H10.4002V5.1Z" stroke="#2188ff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.4 21.7999C10.4 21.7999 11.3 20.9999 11.3 19.8999V15.2999C11.3 14.2999 10.5 13.3999 9.4 13.3999C8.4 13.3999 7.5 14.1999 7.5 15.2999V19.8999C7.6 20.8999 8.4 21.7999 9.4 21.7999Z" stroke="#2188ff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.4002 13.3999H3.8002C2.9002 13.3999 2.2002 14.0999 2.2002 14.9999C2.2002 15.8999 2.9002 16.5999 3.8002 16.5999C4.7002 16.5999 5.4002 15.8999 5.4002 14.9999V13.3999Z" stroke="#2188ff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.9996 14.7999C21.9996 13.7999 21.1996 12.8999 20.0996 12.8999H15.4996C14.4996 12.8999 13.5996 13.6999 13.5996 14.7999C13.5996 15.7999 14.3996 16.6999 15.4996 16.6999H20.0996C21.0996 16.6999 21.9996 15.7999 21.9996 14.7999Z" stroke="#2188ff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5996 18.8V20.4C13.5996 21.3 14.2996 22 15.1996 22C16.0996 22 16.7996 21.3 16.7996 20.4C16.7996 19.5 16.0996 18.8 15.1996 18.8H13.5996Z" stroke="#2188ff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
   };
   return (
     <div

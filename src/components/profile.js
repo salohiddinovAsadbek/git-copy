@@ -33,7 +33,12 @@ function Profile() {
       <p className="bio">{userget.bio}</p>
       <button className="editProfile">Edit profile</button>
       <div className="followingSection">
-        <p className="followingBlue">
+        <p
+          className="followingBlue"
+          onClick={() => {
+            navigate("/followers");
+          }}
+        >
           <i className="fa-solid fa-user-group"></i>
           <span className="followN">{userget.followers}</span>
           <span className="followS">followers</span>

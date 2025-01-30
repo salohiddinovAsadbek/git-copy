@@ -10,6 +10,9 @@ import ProjectPage from "./projectPage/projectPage";
 import { send } from "./store/slices/userInfo";
 import Following from "./followingPage/follow";
 import { sendFollowing } from "./store/slices/following";
+import Followers from "./followers/followers";
+import { sendFollowingers } from "./store/slices/followers";
+import Package from "./packages/package";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
@@ -41,6 +44,15 @@ function App() {
       .catch((error) => {
         console.log(error);
       });
+    fetch(`https://api.github.com/users/salohiddinovAsadbek/followers`)
+      .then((res) => res.json())
+      .then((data) => {
+        dispatch(sendFollowingers(data));
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, [dispatch]); // repositorilarni olish
 
   return (
@@ -49,6 +61,8 @@ function App() {
       <Route path="/repositories" element={<RepoMain />} />
       <Route path="/projects" element={<ProjectPage />} />
       <Route path="/following" element={<Following />} />
+      <Route path="/followers" element={<Followers />} />
+      <Route path="/packages" element={<Package />} />
     </Routes>
   );
 }

@@ -1,0 +1,102 @@
+.package {
+  display: flex;
+  gap: calc(20 / 14.4 * 1vw);
+}
+
+.packageWrapper {
+  padding-top: calc(30 / 14.4 * 1vw);
+  padding-right: calc(100 / 14.4 * 1vw);
+}
+
+.packageWrapper svg {
+  width: calc(55 / 14.4 * 1vw);
+  height: calc(55 / 14.4 * 1vw);
+}
+
+.packageWrapper > h1 {
+  text-align: center;
+  font-size: calc(32 / 14.4 * 1vw);
+  line-height: calc(48 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+  color: rgb(31, 35, 40);
+  font-weight: 600;
+  margin: calc(10 / 14.4 * 1vw) 0;
+}
+
+.packageWrapper > p {
+  font-size: calc(16 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  color: rgb(89, 99, 110);
+  font-family: var(--fontFamily);
+  text-align: center;
+}
+
+.packageWrapper > span {
+  display: block;
+  font-size: calc(20 / 14.4 * 1vw);
+  line-height: calc(30 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+  text-align: center;
+  color: rgb(89, 99, 110);
+  margin-top: calc(50 / 14.4 * 1vw);
+  margin-bottom: calc(15 / 14.4 * 1vw);
+}
+
+.packageCards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: calc(15 / 14.4 * 1vw);
+  row-gap: calc(20 / 14.4 * 1vw);
+}
+
+.packageCard {
+  width: calc(278 / 14.4 * 1vw);
+  height: auto;
+  border-radius: calc(10 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #d0d9e0;
+  display: flex;
+  flex-direction: column;
+  padding: calc(20 / 14.4 * 1vw);
+}
+
+.packageCard > div {
+  display: flex;
+  align-items: center;
+  gap: calc(10 / 14.4 * 1vw);
+  justify-content: start;
+}
+
+.packageCard > div > img {
+  width: calc(18 / 14.4 * 1vw);
+  height: calc(18 / 14.4 * 1vw);
+}
+
+.packageCard > div > h1 {
+  font-size: calc(24 / 14.4 * 1vw);
+  line-height: calc(30 / 14.4 * 1vw);
+  color: rgb(31, 35, 40);
+  font-weight: 600;
+}
+
+.packageCard > p {
+  font-size: calc(12 / 14.4 * 1vw);
+  line-height: calc(19 / 14.4 * 1vw);
+  color: rgb(89, 99, 110);
+  font-family: var(--fontFamily);
+  margin: calc(15 / 14.4 * 1vw) 0;
+}
+
+.packageCard > button {
+  width: max-content;
+  padding: calc(1 / 14.4 * 1vw) calc(10 / 14.4 * 1vw);
+  background-color: #f5f8fa;
+  border-radius: calc(8 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #d0d9e0;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
+}
+
+.packageCard > button:hover {
+  background-color: #ececec;
+}

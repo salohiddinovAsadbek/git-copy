@@ -2,12 +2,14 @@
   display: flex;
   gap: calc(20 / 14.4 * 1vw);
   padding-right: calc(150 / 14.4 * 1vw);
+  width: 100%;
 }
 
 .followingWrapper {
   display: flex;
   flex-wrap: wrap;
   height: min-content;
+  width: 100%;
 }
 
 .followingCard {

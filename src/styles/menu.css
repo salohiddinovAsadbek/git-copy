@@ -153,6 +153,9 @@
 
 .securityMenu > a {
   color: rgb(9, 105, 218);
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  font-family: var(--fontFamily);
 }
 
 .securityMenu > a:hover {
