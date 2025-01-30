@@ -26,7 +26,7 @@ function Navbar() {
   }, [inputValue.length]); // search on input bolganda copilot ham
 
   return (
-    <div>
+    <div className="navbarAnimation">
       <div className="home">
         <div className="homeLeft">
           <button

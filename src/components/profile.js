@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import "../styles/profile.css";
 import Img from "./img";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Profile() {
   const userget = useSelector((state) => state.userinfo);
@@ -49,30 +50,37 @@ function Profile() {
         </p>
       </div>
       <div className="userEditInfo">
-        <div style={{ display: userget?.company ? "flex" : "none" }}>
+        <NavLink style={{ display: userget?.company ? "flex" : "none" }}>
           <Img src="buildingRepository" />
           <p>{userget?.company}</p>
-        </div>
-        <div style={{ display: userget?.location ? "flex" : "none" }}>
+        </NavLink>
+        <NavLink style={{ display: userget?.location ? "flex" : "none" }}>
           <i className="fa-solid fa-location-dot"></i>
           <p>{userget?.location}</p>
-        </div>
-        <div style={{ display: userget?.email ? "flex" : "none" }}>
+        </NavLink>
+        <NavLink style={{ display: userget?.email ? "flex" : "none" }}>
           <i className="fa-regular fa-envelope"></i>
           <p>{userget?.email}</p>
-        </div>
-        <div style={{ display: userget?.blog ? "flex" : "none" }}>
+        </NavLink>
+        <NavLink
+          style={{ display: userget?.blog ? "flex" : "none" }}
+          to={userget.blog}
+        >
           <i className="fa-solid fa-link"></i>
           <p>{userget?.blog}</p>
-        </div>
-        <div style={{ display: userget?.twitter_username ? "flex" : "none" }}>
+        </NavLink>
+        <NavLink
+          style={{ display: userget?.twitter_username ? "flex" : "none" }}
+        >
           <i className="fa-brands fa-x-twitter"></i>
           <p>@{userget?.twitter_username}</p>
-        </div>
-        <div style={{ display: userget?.twitter_username ? "flex" : "none" }}>
+        </NavLink>
+        <NavLink
+          style={{ display: userget?.twitter_username ? "flex" : "none" }}
+        >
           <i className="fa-brands fa-youtube"></i>
           <p>@MrxCapitain</p>
-        </div>
+        </NavLink>
       </div>
     </div>
   );

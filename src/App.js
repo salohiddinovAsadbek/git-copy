@@ -10,6 +10,8 @@ import ProjectPage from "./projectPage/projectPage";
 import { send } from "./store/slices/userInfo";
 import Following from "./followingPage/follow";
 import { sendFollowing } from "./store/slices/following";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 function App() {
   const dispatch = useDispatch();

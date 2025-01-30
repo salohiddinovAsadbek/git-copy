@@ -3,8 +3,8 @@
   flex-direction: column;
   padding-left: calc(150 / 14.4 * 1vw);
   padding-top: calc(35 / 14.4 * 1vw);
-  /* background-color: blue; */
   width: min-content;
+  z-index: 1;
 }
 
 .imgProfile {
@@ -170,13 +170,14 @@
   margin-top: calc(20 / 14.4 * 1vw);
 }
 
-.userEditInfo > div {
+.userEditInfo > a {
   display: flex;
+  cursor: pointer;
   align-items: center;
   gap: calc(10 / 14.4 * 1vw);
 }
 
-.userEditInfo > div > i {
+.userEditInfo > a > i {
   color: #59636e;
   font-size: calc(15 / 14.4 * 1vw);
   width: calc(18 / 14.4 * 1vw);
@@ -185,14 +186,19 @@
   align-items: center;
 }
 
-.userEditInfo > div svg {
+.userEditInfo > a svg {
   width: calc(18 / 14.4 * 1vw);
   height: calc(18 / 14.4 * 1vw);
 }
 
-.userEditInfo > div > p {
+.userEditInfo > a > p {
   font-size: calc(14 / 14.4 * 1vw);
   line-height: calc(20 / 14.4 * 1vw);
   color: rgb(31, 35, 40);
   font-family: var(--fontFamily);
+}
+
+.userEditInfo > a > p:hover {
+  color: blue;
+  text-decoration: underline;
 }

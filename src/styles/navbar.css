@@ -6,6 +6,8 @@
   position: relative;
 }
 
+/*  */
+
 .homeLeft {
   display: flex;
   gap: calc(17 / 14.4 * 1vw);
