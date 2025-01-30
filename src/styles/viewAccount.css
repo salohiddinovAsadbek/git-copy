@@ -9,6 +9,16 @@
   border-bottom-left-radius: calc(15 / 14.4 * 1vw);
   flex-direction: column;
   padding: calc(15 / 14.4 * 1vw);
+  animation: viewAccount 0.5s forwards;
+}
+
+@keyframes viewAccount {
+  from {
+    transform: translateX(30%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 .viewAccountTop {
@@ -93,4 +103,94 @@
 
 .viewAccountTop > div > button:hover .connectionDes {
   display: flex;
+}
+
+.viewAccountWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(20 / 14.4 * 1vw);
+}
+
+.viewAccountWrapper > a {
+  display: flex;
+  width: 100%;
+  padding: calc(5 / 14.4 * 1vw);
+  border-radius: calc(7 / 14.4 * 1vw);
+  gap: calc(10 / 14.4 * 1vw);
+  align-items: center;
+}
+
+.viewAccountWrapper > a:hover {
+  background-color: #eaedf0;
+}
+
+.viewAccountWrapper > a svg {
+  width: calc(17 / 14.4 * 1vw);
+  height: calc(17 / 14.4 * 1vw);
+}
+
+.viewAccountWrapper > a > p {
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  color: #1f2328;
+  font-family: var(--fontFamily);
+}
+
+.viewAccountWrapper > a > i {
+  width: calc(17 / 14.4 * 1vw);
+  font-size: calc(16 / 14.4 * 1vw);
+  color: #636d77;
+}
+
+.viewAccountLine {
+  width: 100%;
+  height: calc(1 / 14.4 * 1vw);
+  background-color: #dfe4e9;
+  margin: calc(7 / 14.4 * 1vw) 0;
+}
+
+.viewAccountPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewAccountPrice > div > p {
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  color: #1f2328;
+  font-family: var(--fontFamily);
+}
+
+.viewAccountPrice > p {
+  padding: 0 calc(7 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #404348;
+  border-radius: calc(10 / 14.4 * 1vw);
+  font-size: calc(12 / 14.4 * 1vw) !important;
+  line-height: calc(19 / 14.4 * 1vw) !important;
+  font-family: var(--fontFamily);
+  font-weight: 500;
+  color: #404348;
+}
+
+.viewAccountPrice > div {
+  display: flex;
+  gap: calc(10 / 14.4 * 1vw);
+  align-items: center;
+}
+
+.viewAccountPrice > div > i {
+  width: calc(17 / 14.4 * 1vw);
+  font-size: calc(15 / 14.4 * 1vw);
+  color: #636d77;
+}
+
+.viewAccountPrice > div svg {
+  width: calc(17 / 14.4 * 1vw);
+  height: calc(17 / 14.4 * 1vw);
+}
+
+.futurePreview > p {
+  border-color: #0968da;
+  color: #0968da !important;
 }

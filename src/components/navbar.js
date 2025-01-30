@@ -326,6 +326,90 @@ function Navbar() {
                 </button>
               </div>
             </div>
+            <div className="viewAccountWrapper">
+              <NavLink to="/">
+                <i className="fa-regular fa-face-smile"></i>
+                <p>Set status</p>
+              </NavLink>
+              <div className="viewAccountLine"></div>
+              <NavLink to="/">
+                <Img src="user" />
+                <p>Your profile</p>
+              </NavLink>
+              <NavLink to="/repositories">
+                <Img src="repoMain" />
+                <p>Your repositories</p>
+              </NavLink>
+              <NavLink to="/">
+                <i className="fa-brands fa-github-alt"></i>
+                <p>Your copilot</p>
+              </NavLink>
+              <NavLink to="/projects">
+                <Img src="projects" />
+                <p>Your projects</p>
+              </NavLink>
+              <NavLink to="/">
+                <i className="fa-regular fa-star"></i>
+                <p>Your stars</p>
+              </NavLink>
+              <NavLink to="/">
+                <Img src="code" />
+                <p>Your gists</p>
+              </NavLink>
+              <NavLink to="/">
+                <Img src="buildingRepository" />
+                <p>Your organizations</p>
+              </NavLink>
+              <NavLink to="/">
+                <i className="fa-solid fa-globe"></i>
+                <p>Your enterprises</p>
+              </NavLink>
+              <NavLink to="/">
+                <i className="fa-regular fa-heart"></i>
+                <p>Your sponsors</p>
+              </NavLink>
+              <div className="viewAccountLine"></div>
+              <NavLink to="/" className="viewAccountPrice">
+                <div>
+                  <Img src="export" />
+                  <p>Try enterprise</p>
+                </div>
+                <p>Free</p>
+              </NavLink>
+              <NavLink to="/" className="viewAccountPrice futurePreview">
+                <div>
+                  <i className="fa-solid fa-flask-vial"></i>
+                  <p>Future preview</p>
+                </div>
+                <p>New</p>
+              </NavLink>
+              <NavLink to="/">
+                <i className="fa-solid fa-gear"></i>
+                <p>Settings</p>
+              </NavLink>
+              <div className="viewAccountLine"></div>
+              <NavLink to="/">
+                <Img src="gitHubWebsite" />
+                <p>GitHub Website</p>
+              </NavLink>
+              <NavLink to="/">
+                <Img src="overview" />
+                <p>GitHub Docs</p>
+              </NavLink>
+              <NavLink to="/">
+                <Img src="groupPeople" />
+                <p>GitHub Support</p>
+              </NavLink>
+              <NavLink to="/">
+                <i className="fa-regular fa-comments"></i>
+                <p>GitHub Coomunity</p>
+              </NavLink>
+              <div className="viewAccountLine"></div>
+              <NavLink to="/">
+                <i className="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Sign out</p>
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>

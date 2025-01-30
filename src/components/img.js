@@ -146,6 +146,40 @@ function Img({ src }) {
 </svg>
 
 `,
+    user: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#636d77" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#636d77" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+    code: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.60008 8.96997L7.11008 11.46C6.82008 11.75 6.82008 12.24 7.11008 12.53L9.60008 15.02" stroke="#59636e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.4004 8.96997L16.8904 11.46C17.1804 11.75 17.1804 12.24 16.8904 12.53L14.4004 15.02" stroke="#59636e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+`,
+    export: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="#636d77" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 15.0001V3.62012" stroke="#636d77" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="#636d77" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+    gitHubWebsite: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 4H16.5C17.12 4 17.67 4.02 18.16 4.09C20.79 4.38 21.5 5.62 21.5 9V15C21.5 18.38 20.79 19.62 18.16 19.91C17.67 19.98 17.12 20 16.5 20H7.5C6.88 20 6.33 19.98 5.84 19.91C3.21 19.62 2.5 18.38 2.5 15V9C2.5 5.62 3.21 4.38 5.84 4.09C6.33 4.02 6.88 4 7.5 4Z" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5 10H17" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 15.5H7.02H17" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.0941 10H10.1031" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.09412 10H7.1031" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+    groupPeople: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.15957 10.87C9.05957 10.86 8.93957 10.86 8.82957 10.87C6.44957 10.79 4.55957 8.84 4.55957 6.44C4.55957 3.99 6.53957 2 8.99957 2C11.4496 2 13.4396 3.99 13.4396 6.44C13.4296 8.84 11.5396 10.79 9.15957 10.87Z" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.4103 4C18.3503 4 19.9103 5.57 19.9103 7.5C19.9103 9.39 18.4103 10.93 16.5403 11C16.4603 10.99 16.3703 10.99 16.2803 11" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.15973 14.56C1.73973 16.18 1.73973 18.82 4.15973 20.43C6.90973 22.27 11.4197 22.27 14.1697 20.43C16.5897 18.81 16.5897 16.17 14.1697 14.56C11.4297 12.73 6.91973 12.73 4.15973 14.56Z" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.3398 20C19.0598 19.85 19.7398 19.56 20.2998 19.13C21.8598 17.96 21.8598 16.03 20.2998 14.86C19.7498 14.44 19.0798 14.16 18.3698 14" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
   };
   return (
     <div
